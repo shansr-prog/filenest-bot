@@ -1,15 +1,12 @@
 {
   "name": "filenest-bot",
   "version": "1.0.0",
-  "description": "FileNest Telegram Bot",
   "type": "module",
   "scripts": {
     "start": "node api/webhook.js"
   },
   "dependencies": {
-    "@grammyjs/menu": "^1.2.1",
     "grammy": "^1.38.2",
-    "@supabase/supabase-js": "^2.49.8",
-    "nanoid": "^5.1.5"
+    "@supabase/supabase-js": "^2.49.8"
   }
 }
