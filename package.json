@@ -1,12 +1,23 @@
 {
-  "name": "filenest-bot",
+  "name": "filenestbot",
   "version": "1.0.0",
+  "description": "Production-ready Telegram File Sharing Bot with Web Dashboard",
+  "main": "api/webhook.js",
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
-    "start": "node api/webhook.js"
+    "start": "node api/webhook.js",
+    "dev": "vercel dev"
   },
   "dependencies": {
-    "grammy": "^1.38.2",
-    "@supabase/supabase-js": "^2.49.8"
-  }
+    "@supabase/supabase-js": "^2.48.0",
+    "grammy": "^1.34.0",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "vercel": "^39.3.0"
+  },
+  "private": true
 }
